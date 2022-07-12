@@ -1,0 +1,53 @@
+:root {
+  --primary-color: rgba(146, 172, 209, 1);
+  --primary-color-soft: rgba(146, 172, 209, 0.8);
+  --neumorphism-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 4px 0 rgba(255, 255, 255, 0.3),
+    1px 1px 2px 0 rgba(255, 255, 255, 0.25) inset,
+    -1px -1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+  --neumorphism-box-shadow-active: -1px -1px 2px 0 rgba(0, 0, 0, 0.25),
+    1px 1px 2px 0 rgba(255, 255, 255, 0.3),
+    -2px -2px 4px 0 rgba(255, 255, 255, 0.25) inset,
+    2px 2px 2px 0 rgba(0, 0, 0, 0.3) inset;
+  --key-background: rgba(146, 172, 209, 0.1);
+}
+
+body.sharp {
+  --neumorphism-box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 4px 0 rgba(255, 255, 255, 0.3),
+    0 0 0 0 rgba(255, 255, 255, 0.25) inset, 0 0 0 0 rgba(0, 0, 0, 0.3) inset;
+  --neumorphism-box-shadow-active: 0 0 0 0 rgba(0, 0, 0, 0.25),
+    0 0 0 0 rgba(255, 255, 255, 0.3),
+    -2px -2px 4px 0 rgba(255, 255, 255, 0.25) inset,
+    2px 2px 2px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+body.raised {
+  --key-background-raised: linear-gradient(
+    145deg,
+    rgba(146, 172, 209, 0.1),
+    rgba(115, 138, 173, 0.3)
+  );
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--primary-color-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  user-select: none;
+}

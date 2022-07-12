@@ -1,0 +1,33 @@
+.key {
+  height: 75px;
+  width: 75px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  -webkit-font-smoothing: antialiased;
+  background: var(--key-background);
+  box-shadow: var(--neumorphism-box-shadow);
+  transition: all 50ms ease-in;
+  transform: scale(1, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.key:active {
+  box-shadow: var(--neumorphism-box-shadow-active);
+  transform: scale(0.95, 0.95);
+}
+
+.raised .key {
+  background: var(--key-background-raised);
+}
+
+.key.active {
+  box-shadow: var(--neumorphism-box-shadow-active);
+  transform: scale(0.95, 0.95);
+}
