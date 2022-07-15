@@ -1,7 +1,8 @@
-import { useLayoutEffect, useState } from 'react'
+import { useLayoutEffect } from 'react'
 import './App.css'
-import { Key } from './components/key'
-import { Row } from './components/row'
+import { Key } from './components/key';
+import { Row } from './components/row';
+import { Stage } from './components/stage/stage';
 import { start, keys, getKeyName } from './helper';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <Stage className="App">
       <h1>Neumorphism Keyboard</h1>
       <div className="keyboard">
         {Object.keys(keys).map((rowName => (
@@ -22,7 +23,7 @@ function App() {
           </Row>
         )))}
       </div>
-    </div>
+    </Stage>
   )
 }
 
